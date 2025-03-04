@@ -82,6 +82,6 @@ umount /MOUNT_POINT                         //unmount the image
 <pre><code class="has-line-data" data-line-start="72" data-line-end="74" class="language-sh">qemu-system-xtensa -nographic -machine esp32 -drive file=result.bin,<span class="hljs-keyword">if</span>=mtd,format=raw -nic user,model=open_eth,id=lo0,hostfwd=tcp:<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">8000</span>-:<span class="hljs-number">80</span> -drive file=sd_image.bin,<span class="hljs-keyword">if</span>=sd,format=raw
 </code></pre>
 <h2 class="code-line" data-line-start=75 data-line-end=76 ><a id="Example_Output_75"></a>Example Output</h2>
-<p class="has-line-data" data-line-start="77" data-line-end="78">&lt;img src=“demo.gif” alt=“webserver” style=“width: 100%; height: auto; max-width: 100%;”&gt;</p>
+<img src="demo.gif" alt="webserver" style="width: 100%; height: auto; max-width: 100%;">
 
 </body></html>
