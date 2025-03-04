@@ -9,11 +9,7 @@ const Footer = ({ FooterColor, FooterText, TextColor }: Props) => {
     <div>
       <footer
         className={
-          "footer sm:footer-horizontal footer-center bg-" +
-          FooterColor +
-          " text-" +
-          TextColor +
-          "-content p-4 fixed bottom-0"
+          `footer sm:footer-horizontal footer-center bg-${FooterColor} text-${TextColor}-content p-4 fixed bottom-0`
         }
       >
         <aside>

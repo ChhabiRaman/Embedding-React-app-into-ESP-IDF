@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>HTTP Restful API Server Example using React.md</title><style></style></head><body id="preview">
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>HTTP Restful API Server Example.md</title><style></style></head><body id="preview">
 <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="HTTP_Restful_API_Server_Example_using_React_0"></a>HTTP Restful API Server Example using React</h1>
 <p class="has-line-data" data-line-start="2" data-line-end="3">This project demonstrates how to run a React application on an ESP32 microcontroller using ESP-IDF as the IoT development framework and React with TypeScript for the frontend. Additionally, QEMU (Quick Emulator) has been utilized to run ESP32 code without the need for physical hardware.</p>
 <h2 class="code-line" data-line-start=4 data-line-end=5 ><a id="Overview_4"></a>Overview</h2>
@@ -81,5 +81,7 @@ umount /MOUNT_POINT                         //unmount the image
 <p class="has-line-data" data-line-start="69" data-line-end="70">Pass the SD Card image to the QEMU and forward the connection to the port 8000 on your local machine.</p>
 <pre><code class="has-line-data" data-line-start="72" data-line-end="74" class="language-sh">qemu-system-xtensa -nographic -machine esp32 -drive file=result.bin,<span class="hljs-keyword">if</span>=mtd,format=raw -nic user,model=open_eth,id=lo0,hostfwd=tcp:<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">8000</span>-:<span class="hljs-number">80</span> -drive file=sd_image.bin,<span class="hljs-keyword">if</span>=sd,format=raw
 </code></pre>
+<h2 class="code-line" data-line-start=75 data-line-end=76 ><a id="Example_Output_75"></a>Example Output</h2>
+<p class="has-line-data" data-line-start="77" data-line-end="78"><img src="demo.gif" alt="webserver"></p>
 
 </body></html>

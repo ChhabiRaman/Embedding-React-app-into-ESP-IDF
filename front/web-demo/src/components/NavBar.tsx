@@ -9,7 +9,7 @@ interface Props {
 const NavBar = ({ navbar_items = [], bg_color, text }: Props) => {
   return (
     <div>
-      <div className={"navbar bg-" + { bg_color } + " shadow-sm"}>
+      <div className={`navbar bg-${bg_color} shadow-sm`}>
         <div className="flex-none">
           <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -56,7 +56,7 @@ const NavBar = ({ navbar_items = [], bg_color, text }: Props) => {
         </div>
         <div className="mx-2 flex-1 px-2 text-xl font-semibold"> {text} </div>
       </div>
-    </div>
+    </div >
   );
 };
 
